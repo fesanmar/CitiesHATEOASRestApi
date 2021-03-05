@@ -5,7 +5,7 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 import com.felipesantacruz.cities.model.Country;
 
-@RepositoryRestResource(exported = false)
+@RepositoryRestResource(exported = true)
 public interface CountryRepository extends JpaRepository<Country, Long>
 {
 
