@@ -11,7 +11,10 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data @NoArgsConstructor @AllArgsConstructor @Builder
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 @Entity
 public class City
 {
@@ -20,7 +23,11 @@ public class City
 	private Long id;
 
 	private String name;
-	
+
+	private String lat;
+
+	private String lng;
+
 	@ManyToOne
 	@JoinColumn(name = "country_id")
 	private Country country;
